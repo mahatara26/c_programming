@@ -129,7 +129,7 @@ scanf("%d",&n3);
 if(n1>n2&&n2>n3){
             printf("first number is largest :%d",n1);
 }
-else if(n2>1&&n2>n3){
+else if(n2>n1&&n2>n3){
             printf("second number is largest:%d",n2);
 
 }
@@ -237,12 +237,12 @@ if(unit<=20){
 }
 else if(unit>20&&unit<=120)
 {
-    total_bill=80+8*unit;
+    total_bill=80+8*(unit-20);
                 printf("your total bill is %d",total_bill);
 
 }
 else{
-    total_bill=80+8*100+10*unit;
+    total_bill=80+8*100+10*(unit-120);
                     printf("your total bill is %d",total_bill);
 
 }
